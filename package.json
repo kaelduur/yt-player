@@ -1,0 +1,14 @@
+{
+  "name": "yt-player",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "kaelduur",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^4.0.7"
+  }
+}

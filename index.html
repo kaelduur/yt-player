@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>YT.Player</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header id="titlebar">
+            <div id="drag-region">
+                <div id="window-title">
+                    <span>YT.Player</span>
+                </div>
+                <div id="window-controls">
+                    <div class="button" id="pin-button">
+                        <span>&#xE840;</span>
+                    </div>
+                    <div class="button" id="unpin-button">
+                        <span>&#xE77A;</span>
+                    </div>
+                    <div class="button" id="min-button">
+                        <span>&#xE921;</span>
+                    </div>
+                    <div class="button" id="max-button">
+                        <span>&#xE922;</span>
+                    </div>
+                    <div class="button" id="restore-button">
+                        <span>&#xE923;</span>
+                    </div>
+                    <div class="button" id="close-button">
+                        <span>&#xE8BB;</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div id="main">
+            <div class="main-controls">
+                <input type="text" id="video-input" required="on">
+                <button type="button" id="go-button">GO</button>
+            </div>
+            <div id="container">
+                <iframe id="yt-video" src="https://www.youtube.com/embed/cpv1YUy2kJ0?modestbranding=0;&rel=0&showinfo=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+            </div>
+        </div>
+
+        <script>
+            require('./renderer.js');
+        </script>
+    </body>
+</html>
